@@ -48,7 +48,6 @@ A two-person purple-team lab: I run a web attack chain (command injection → re
 
 ## 📫 Contact
 
-<!-- Add your LinkedIn URL below and delete this comment -->
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibaad-shams/)
 
 🇬🇧 English (fluent) · 🇫🇷 French (B1)
