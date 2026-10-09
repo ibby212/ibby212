@@ -40,8 +40,7 @@ A two-person purple-team lab: I run a web attack chain (command injection → re
 ## 📜 Certifications & training
 
 - TryHackMe **SOC Level 1**
-- LetsDefend **SOC Analyst Level 1**
-- Fortinet **NSE 1, 2, 3**
+- Fortinet **NSE 1**
 - CNIL **L'atelier RGPD**
 
 ---
@@ -50,4 +49,4 @@ A two-person purple-team lab: I run a web attack chain (command injection → re
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibaad-shams/)
 
-🇬🇧 English (fluent) · 🇫🇷 French (B1)
+🇬🇧 English (C1) · 🇫🇷 French (B1) · 🇮🇳 Hindi (Native) · Urdu (Native)
