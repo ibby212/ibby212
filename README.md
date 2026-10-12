@@ -15,6 +15,11 @@ Seven identity and access management labs: MFA and brute-force lockout, HR-drive
 
 `Keycloak` `midPoint` `OpenLDAP` `OIDC` `Entra ID` `MITRE ATT&CK` `Docker`
 
+### [OSPF, BGP & NAT Network Lab](https://github.com/ibby212/ospf-bgp-nat-network-lab)
+A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addressing, multi-area OSPF, eBGP peering, PPP with CHAP, ACLs, static NAT and PAT, plus DNS and mail servers. I then reviewed it as if I were responsible for it, and documented **5 security and design findings** with the fix for each: private IP leaked in public DNS, NAT exposing every port, no management-plane hardening.
+
+`Cisco IOS` `OSPF` `BGP` `NAT` `ACLs` `Packet Tracer` `Network security`
+
 ### 🚧 Attack → detection lab (in progress)
 A two-person purple-team lab: I run a web attack chain (command injection → reverse shell → DNS exfiltration) against a vulnerable app behind OPNsense, then detect each step with custom **Suricata** rules and **Wazuh** host rules, and correlate network and host alerts into one incident.
 
@@ -32,8 +37,9 @@ A two-person purple-team lab: I run a web attack chain (command injection → re
 ![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)
 ![Suricata](https://img.shields.io/badge/Suricata-EF6C00?style=flat)
 ![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat&logo=keycloak&logoColor=white)
+![Cisco](https://img.shields.io/badge/Cisco_IOS-1BA0D7?style=flat&logo=cisco&logoColor=white)
 
-**Security domains:** `SOC / alert triage` `SIEM` `Network IDS` `Detection rules` `Identity & Access Management` `MITRE ATT&CK`
+**Security domains:** `SOC / alert triage` `SIEM` `Network IDS` `Detection rules` `Identity & Access Management` `Routing & network security` `MITRE ATT&CK`
 
 ---
 
