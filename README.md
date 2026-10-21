@@ -20,10 +20,10 @@ A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addre
 
 `Cisco IOS` `OSPF` `BGP` `NAT` `ACLs` `Packet Tracer` `Network security`
 
-### 🚧 Attack → detection lab (in progress)
-A two-person purple-team lab: I run a web attack chain (command injection → reverse shell → DNS exfiltration) against a vulnerable app behind OPNsense, then detect each step with custom **Suricata** rules and **Wazuh** host rules, and correlate network and host alerts into one incident.
+### [Network Attack & Detection Lab: OPNsense + Suricata IDS](projects/advanced-attack-detection-lab.pdf)
+A two-person attack/detection lab inside a four-student group, where I ran the **defender** side: I hosted OPNsense, a vulnerable DVWA target and the **Suricata** sensor while a teammate launched live web attacks across a Tailscale link. I wrote **five custom Suricata rules** — command injection, web shell, local file inclusion, DNS tunnelling and raw-TCP shell output (SIDs 9000010–9000040) — mapped to **MITRE ATT&CK** to catch attack *behaviour* rather than a fixed payload, then measured their false positives against normal browsing and tuned them to zero while the real attack still fired. For the capstone I rebuilt the full incident timeline from Suricata's `eve.json` — command injection → web shell → bind shell → DNS exfiltration, each stage with its SID and timestamp. Key lessons: a reverse shell blocked on port 4444 still slipped out over standard HTTPS (443), and DNS tunnelling was detected even though its traffic never leaves the resolver.
 
-`Suricata` `Wazuh` `OPNsense` `Detection engineering`
+`Suricata` `OPNsense` `DVWA` `Network IDS` `MITRE ATT&CK` `Detection engineering`
 
 ---
 
@@ -33,7 +33,6 @@ A two-person purple-team lab: I run a web attack chain (command injection → re
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat&logo=docker&logoColor=white)
-![Wazuh](https://img.shields.io/badge/Wazuh-3B82F6?style=flat&logo=wazuh&logoColor=white)
 ![Splunk](https://img.shields.io/badge/Splunk-000000?style=flat&logo=splunk&logoColor=white)
 ![Suricata](https://img.shields.io/badge/Suricata-EF6C00?style=flat)
 ![Keycloak](https://img.shields.io/badge/Keycloak-4D4D4D?style=flat&logo=keycloak&logoColor=white)
