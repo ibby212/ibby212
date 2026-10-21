@@ -1,17 +1,17 @@
-# Hi, I'm Ibaad 👋
+# Ibaad Shams
 
 ### Blue team · SOC & detection engineering · Computer Science student at EPITA Paris
 
-I'm a BSc Computer Science student at **EPITA** (2024 – 2027) focused on **defensive security**: monitoring, detection rules and incident triage. I learn by building labs, attacking them myself, and then writing the detections that should have caught me.
+BSc Computer Science student at **EPITA** (2024–2027), working on the defensive side of security: monitoring, detection rules and incident triage. Most of what's here is labs I built, attacked, and then wrote the detection rules for.
 
-🎯 **Looking for a 6-month SOC / detection engineering internship (stage de fin d'études) starting February–March 2027, in Paris.**
+**Looking for a 6-month SOC / detection engineering internship (stage de fin d'études) starting February or March 2027, in Paris.**
 
 ---
 
-## 🛡️ Projects
+## Projects
 
 ### [Network Attack & Detection Lab: OPNsense + Suricata IDS](https://github.com/ibby212/suricata-opnsense-detection-lab)
-A two-person attack/detection lab inside a four-student group, where I ran the **defender** side: I hosted OPNsense, a vulnerable DVWA target and the **Suricata** sensor while a teammate launched live web attacks across a Tailscale link. I wrote **five custom Suricata rules** — command injection, web shell, local file inclusion, DNS tunnelling and raw-TCP shell output (SIDs 9000010–9000040) — mapped to **MITRE ATT&CK** to catch attack *behaviour* rather than a fixed payload, then measured their false positives against normal browsing and tuned them to zero while the real attack still fired. For the capstone I rebuilt the full incident timeline from Suricata's `eve.json` — command injection → web shell → bind shell → DNS exfiltration, each stage with its SID and timestamp. Key lessons: a reverse shell blocked on port 4444 still slipped out over standard HTTPS (443), and DNS tunnelling was detected even though its traffic never leaves the resolver.
+A two-person attack/detection lab inside a four-student group, where I ran the **defender** side. I hosted OPNsense, a vulnerable DVWA target and the **Suricata** sensor while a teammate launched live web attacks across a Tailscale link. I wrote **five custom Suricata rules** (SIDs 9000010–9000040) for command injection, web shell, local file inclusion, DNS tunnelling and raw-TCP shell output, mapped to **MITRE ATT&CK** so they match the result of an attack rather than one payload, then measured their false positives against normal browsing and tuned them to zero while the real attack still fired. For the capstone I rebuilt the incident timeline from Suricata's `eve.json`: command injection → web shell → bind shell → DNS exfiltration, each stage with its SID and timestamp. Two things worth noting: a reverse shell blocked on port 4444 still left over HTTPS on 443, and DNS tunnelling was caught even though the queries never leave the resolver.
 
 `Suricata` `OPNsense` `DVWA` `Network IDS` `MITRE ATT&CK` `Detection engineering`
 
@@ -27,7 +27,7 @@ A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addre
 
 ---
 
-## 🧰 Tools & skills
+## Tools & skills
 
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=flat&logo=linux&logoColor=black)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat&logo=python&logoColor=white)
@@ -42,7 +42,7 @@ A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addre
 
 ---
 
-## 📜 Certifications & training
+## Certifications
 
 - TryHackMe **SOC Level 1**
 - Fortinet **NSE 1**
@@ -50,7 +50,7 @@ A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addre
 
 ---
 
-## 📫 Contact
+## Contact
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=flat&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ibaad-shams/)
 
