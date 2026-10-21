@@ -10,6 +10,11 @@ I'm a BSc Computer Science student at **EPITA** (2024 – 2027) focused on **def
 
 ## 🛡️ Projects
 
+### [Network Attack & Detection Lab: OPNsense + Suricata IDS](https://github.com/ibby212/suricata-opnsense-detection-lab)
+A two-person attack/detection lab inside a four-student group, where I ran the **defender** side: I hosted OPNsense, a vulnerable DVWA target and the **Suricata** sensor while a teammate launched live web attacks across a Tailscale link. I wrote **five custom Suricata rules** — command injection, web shell, local file inclusion, DNS tunnelling and raw-TCP shell output (SIDs 9000010–9000040) — mapped to **MITRE ATT&CK** to catch attack *behaviour* rather than a fixed payload, then measured their false positives against normal browsing and tuned them to zero while the real attack still fired. For the capstone I rebuilt the full incident timeline from Suricata's `eve.json` — command injection → web shell → bind shell → DNS exfiltration, each stage with its SID and timestamp. Key lessons: a reverse shell blocked on port 4444 still slipped out over standard HTTPS (443), and DNS tunnelling was detected even though its traffic never leaves the resolver.
+
+`Suricata` `OPNsense` `DVWA` `Network IDS` `MITRE ATT&CK` `Detection engineering`
+
 ### [IAM Labs: Keycloak, midPoint, LDAP, Entra ID](https://github.com/ibby212/iam-keycloak-midpoint-labs)
 Seven identity and access management labs: MFA and brute-force lockout, HR-driven joiner/mover/leaver provisioning, Segregation of Duties, access certification, OIDC SSO and federation with Google and Microsoft Entra ID. Each lab ends with an **attacker view / defender view** mapped to MITRE ATT&CK and the signals a SOC should alert on.
 
@@ -19,11 +24,6 @@ Seven identity and access management labs: MFA and brute-force lockout, HR-drive
 A two-autonomous-system network built by hand in Cisco Packet Tracer: VLSM addressing, multi-area OSPF, eBGP peering, PPP with CHAP, ACLs, static NAT and PAT, plus DNS and mail servers. I then reviewed it as if I were responsible for it, and documented **5 security and design findings** with the fix for each: private IP leaked in public DNS, NAT exposing every port, no management-plane hardening.
 
 `Cisco IOS` `OSPF` `BGP` `NAT` `ACLs` `Packet Tracer` `Network security`
-
-### [Network Attack & Detection Lab: OPNsense + Suricata IDS](projects/advanced-attack-detection-lab.pdf)
-A two-person attack/detection lab inside a four-student group, where I ran the **defender** side: I hosted OPNsense, a vulnerable DVWA target and the **Suricata** sensor while a teammate launched live web attacks across a Tailscale link. I wrote **five custom Suricata rules** — command injection, web shell, local file inclusion, DNS tunnelling and raw-TCP shell output (SIDs 9000010–9000040) — mapped to **MITRE ATT&CK** to catch attack *behaviour* rather than a fixed payload, then measured their false positives against normal browsing and tuned them to zero while the real attack still fired. For the capstone I rebuilt the full incident timeline from Suricata's `eve.json` — command injection → web shell → bind shell → DNS exfiltration, each stage with its SID and timestamp. Key lessons: a reverse shell blocked on port 4444 still slipped out over standard HTTPS (443), and DNS tunnelling was detected even though its traffic never leaves the resolver.
-
-`Suricata` `OPNsense` `DVWA` `Network IDS` `MITRE ATT&CK` `Detection engineering`
 
 ---
 
